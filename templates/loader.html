@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>VisioSecure - Loading</title>
+    </head>
+    <body>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Quicksand:wght@300&display=swap');
+
+                body {
+            background: #ffffff;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        .slider {
+            position: absolute;
+            width: 60%;
+            height: 5px;
+            overflow-x: hidden;
+        }
+
+        .line {
+            position: absolute;
+            opacity: 0.4;
+            background: #47b5ed;
+            width: 150%;
+            height: 5px;
+        }
+
+        .subline {
+            position: absolute;
+            background: #4288c8;
+            height: 5px;
+        }
+
+        .inc {
+            animation: increase 1.5s infinite;
+        }
+
+        .dec {
+            animation: decrease 1.5s 0.3s infinite;
+        }
+
+        @keyframes increase {
+            from {
+                left: -5%;
+                width: 5%;
+            }
+
+            to {
+                left: 130%;
+                width: 100%;
+            }
+        }
+
+        @keyframes decrease {
+            from {
+                left: -80%;
+                width: 80%;
+            }
+
+            to {
+                left: 110%;
+                width: 10%;
+            }
+        }
+               </style> 
+        <div style="padding-top: 16rem; padding-left:20%; padding-right:30%;">
+            <br><br><br>
+            <h2 style="text-align: center; padding-left: 6rem;">VisioSecure: Securing pathways, just a moment...</h2>
+            <div class="slider">
+                <div class="line"></div>
+                <div class="subline inc"></div>
+                <div class="subline dec"></div>
+
+            </div>
+            
+
+        </div>
+    </body>
+</html>
